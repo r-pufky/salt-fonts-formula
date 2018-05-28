@@ -1,0 +1,8 @@
+fonts:
+  # Lookup values are set in defaults.yaml and may be overridden here.
+  lookup:
+    linux: /usr/local/share/fonts/salt/
+
+  config:
+    linux: /alternative/install/location
+    linux_refresh: alternative font refresh command

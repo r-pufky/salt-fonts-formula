@@ -1,0 +1,4 @@
+{%- import_yaml "fonts/defaults.yaml" as defaults -%}
+
+{%- set fonts = salt['pillar.get']('fonts:lookup', defaults.fonts, merge=True) -%}
+{%- set config = salt['pillar.get']('fonts:config', {}) -%}
