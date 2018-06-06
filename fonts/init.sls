@@ -11,8 +11,8 @@ copy_fonts:
   file.recurse:
     - name: {{ config.get('linux', fonts.linux) }}
     - source: 'salt://fonts/files/fonts'
-    - dir_mod: 0755
-    - file_mod: 0644
+    - dir_mode: 0755
+    - file_mode: 0644
     - user: root
     - group: staff
 
