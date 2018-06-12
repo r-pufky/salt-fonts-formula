@@ -3,6 +3,13 @@ fonts:
   lookup:
     linux: /usr/local/share/fonts/salt/
 
+    source: salt://fonts/files/fonts
+
   config:
+
+    # Where fonts should be sourced from. Should be set somewhere within
+    # your environment. Watch out for namespace collisions with formula.
+    source: salt://binaries/fonts
+
     linux: /alternative/install/location
     linux_refresh: alternative font refresh command

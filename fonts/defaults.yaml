@@ -1,9 +1,11 @@
 fonts:
-  linux: /usr/local/share/fonts/salt/
-  linux_refresh: /usr/bin/fc-cache -f -v
-
   package_dependencies:
     - fontconfig
+
+  source: salt://fonts/files/fonts
+
+  linux: /usr/local/share/fonts/salt/
+  linux_refresh: /usr/bin/fc-cache -f -v
 
   release:
     repo_doc: https://www.sublimetext.com/docs/3/linux_repositories.html

@@ -10,7 +10,7 @@ install_font_config:
 copy_fonts:
   file.recurse:
     - name: {{ config.get('linux', fonts.linux) }}
-    - source: 'salt://fonts/files/fonts'
+    - source: {{ config.get('source', fonts.source) }}
     - dir_mode: 0755
     - file_mode: 0644
     - user: root
